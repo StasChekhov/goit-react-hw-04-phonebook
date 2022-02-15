@@ -9,7 +9,7 @@ const Filter = ({ value, onChange }) => {
             name="name"
             pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
             value={ value }
-            onChange={ onChange }
+            onChange={(e)=> {onChange(e.target.value)} }
             title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
             required
         />
